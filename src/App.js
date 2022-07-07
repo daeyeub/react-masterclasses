@@ -27,9 +27,9 @@ const Box = styled.div`
   align-items: center;
   ${Hello} {
     color: blue;
-    &:hover {
-      color: red;
-    }
+  }
+  &:hover ${Hello} {
+    background-color: red;
   }
 `;
 
