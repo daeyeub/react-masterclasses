@@ -13,18 +13,31 @@ const rotationAnimation = keyframes`
  border-radius:100px;
  }
 `;
+const Hello = styled.span`
+  font-size: 30px;
+`;
 const Box = styled.div`
   height: 200px;
   width: 200px;
   background-color: tomato;
   animation: ${rotationAnimation} 0.5s linear infinite;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ${Hello} {
+    color: blue;
+    &:hover {
+      color: red;
+    }
+  }
 `;
 
 function App() {
   return (
     <Wrapper>
       <Box>
-        <span>hello</span>
+        <Hello>hello</Hello>
       </Box>
     </Wrapper>
   );
