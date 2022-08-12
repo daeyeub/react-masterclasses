@@ -57,7 +57,8 @@ const Img = styled.img`
   height: 35px;
   margin-right: 10px;
 `;
-const Coins = () => {
+interface ICoinsProps {}
+const Coins = ({}: ICoinsProps) => {
   const { isLoading, data } = useQuery<ICoin[]>("allCoins", fetchCoins);
   // const [coins, setCoins] = useState<ICoin[]>([]);
   // const [loading, setLoading] = useState(true);
